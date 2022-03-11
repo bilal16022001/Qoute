@@ -1,0 +1,74 @@
+
+@charset "utf-8";
+/* CSS Document*/
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	display:flex;
+	flex-direction:column;
+	height:100vh;
+	align-items:center;
+	justify-content:center;
+	background-color:hsl(210, 36%, 96%);
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.Qoute h1{
+	text-align:center;
+	margin-bottom:20px;
+	color:#c59d5f;
+}
+.Qoute p{
+	width:500px;
+}
+.qestion{
+	background-color:#fff;
+	box-shadow:0 5px 15px rgba(0,0,0,0.2);
+	padding:20px;
+	width:550px;
+	margin-bottom:30px;
+	border-radius:10px;
+	position: relative;
+	height:60px;
+	overflow:hidden;
+}
+.qestion h2{
+	margin-bottom:10px;
+}
+.qestion span{
+	position:absolute;
+	right:10px;
+	font-size:40px;
+	top:10px;
+	cursor: pointer;
+}
+.active{
+	height:130px;
+	transition:all .3s;
+}
+@media (max-width:768px){
+	.qestion{
+		width:300px;
+	}
+	.qestion span{
+		position:absolute;
+		right:10px;
+		font-size:40px;
+		top:28%;
+		cursor: pointer;
+	}
+	.answer p {
+		width:270px;
+	}
+}
